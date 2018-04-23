@@ -1,8 +1,23 @@
+looking-up, inserting, deleting, and updating.
+
 <html>
     <head>
         <title>{{ title }} - Microblog</title>
     </head>
     <body>
         <h1>Hello, {{ user.username }}!</h1>
+	<form action="/do_something.py">
+		Look up:<br>
+		<input type="text" name="lookup" value="to_lookup">
+		<br>
+		Insert:<br>
+		<input type="text", name="insert" value="to_insert">
+		Delete:<br>
+		<input type="text", name="delete" value="to_delete">
+		Update:<br><br>
+		<input type="submit" value="Submit"> 
+	</form>
+	
+		
     </body>
 </html>

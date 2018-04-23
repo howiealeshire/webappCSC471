@@ -6,3 +6,10 @@ from app import app
 def index():
     user = {'username': 'Miguel'}
     return render_template('index.html', title='Home',user=user)
+
+
+@app.route('/py_scripts/do_something.py')
+def my_link():
+    print('I got clickedfff')
+    return 'Click!'
+
